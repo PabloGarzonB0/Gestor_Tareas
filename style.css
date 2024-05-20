@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color:#117A65 ; */
+    background-color:#5D6D7E ;
+    
+}
+/* Responsivo */
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    form{
+        width: 100%
+    }
+}
+.header th {
+  background-color: #21618C;
+  color: white; /* Para que el texto sea visible sobre el fondo azul */
+} 
+tbody {
+  background-color: #AEB6BF; /* Para que el texto sea visible sobre el fondo azul */
+}
+.form-txt{
+    display: flex;
+    justify-content: space-between;
+}
+.form-txt a{
+    color: #222;
+    text-decoration: none;
+    font: 15px;
+    margin-bottom: 25px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    background-color: azure;
+    padding: 20px 14px;
+    margin-bottom: 25px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    color:#0f0f0f9c;
+}
+::placeholder{
+    color: #ABB2B9;
+    font-size: 15px;
+}
+
+:focus{
+    outline: 1px solid yellow;
+}
+
+.caja1 {
+    width: auto;
+    height: auto;
+    margin: 5px; 
+}
+
+.caja2 {
+    width: auto;
+    height: auto;
+    margin: 5px; 
+}
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    background-color: #D5D8DC   ;
+    margin-bottom: 20px;
+}
+
+button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 1.5em 1em 1.5em;
+    background-color: yellow;
+    cursor: pointer;
+    box-shadow: 4px 6px 0px black;
+    border: 4px solid;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    transition: box-shadow 250ms, transform 250ms, filter 50ms;
+  }
+  button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 3px 0px black;
+  }
+  button:active {
+    filter: saturate(0.75);
+  }
+  button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #FF5733;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: transform 250ms;
+  }
+  button:hover::after {
+    transform: translateX(0);
+  }
+  .bgContainer {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    max-width: 35%; /* adjust this if the button text is not proper */
+    font-size: 2em;
+    font-weight: 600;
+  }
+  .bgContainer span {
+    position: relative;
+    transform: translateX(-100%);
+    transition: all 250ms;
+  }
+  .button:hover .bgContainer > span {
+    transform: translateX(0);
+  }
+  .arrowContainer {
+    padding: 1em;
+    margin-inline-end: 1em;
+    border: 4px solid;
+    border-radius: 50%;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    transition: transform 250ms, background-color 250ms;
+    z-index: 100;
+  }
+  .arrowContainer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-color: yellow;
+    transform: translateX(-100%);
+    z-index: -1;
+    transition: transform 250ms ease-in-out;
+  }
+  button:hover .arrowContainer::after {
+    transform: translateX(0);
+  }
+  button:hover .arrowContainer {
+    transform: translateX(5px);
+  }
+  button:active .arrowContainer {
+    transform: translateX(8px);
+  }
+  .arrowContainer svg {
+    vertical-align: middle;
+  }
+  
+
+
+.plate {
+  width: 410px;
+  margin: 10% auto;
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  -moz-transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: #222;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+.text1 {
+  font-size: 60px;
+}
+.text2 {
+  font-size: 169px;
+}
+.text3 {
+  font-size: 100px;
+}
