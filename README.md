@@ -1,5 +1,11 @@
 # Sistema de Gestión de Tareas
 
+<div align="center">
+   <img src="imagenes/InterfazPrincipal.gif" alt ="Visualizacion de interfaz">
+</div>
+
+
+
 ## Descripción
 
 El Sistema de Gestión de Tareas es un programa diseñado para ayudar a las personas a gestionar sus actividades diarias de manera eficiente. Este programa permite a los usuarios crear, editar y eliminar tareas, proporcionando una manera sencilla de organizar su día a día. Cada tarea en el sistema tiene tres atributos clave: un título, una descripción y una fecha que indica cuándo se realizó la tarea.
