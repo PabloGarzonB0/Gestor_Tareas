@@ -1,4 +1,4 @@
-# Sistema de Gestión de Tareas
+# Sistema de Gestión de Tareas Personales Utilizando CRUD
 
 <div align="center">
    <img src="imagenes/InterfazPrincipal.gif" alt ="Visualizacion de interfaz">
